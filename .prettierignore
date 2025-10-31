@@ -1,0 +1,7 @@
+# Ignore artifacts
+/out
+/node_modules
+.vscode-test/
+
+# Ignore generated files
+pnpm-lock.yaml

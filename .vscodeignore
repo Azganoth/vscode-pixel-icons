@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/**
+
+# Build output
+out/test/**
+out/**/*.map
+
+# Source files
+src/**
+
+# Development tool configuration
+.vscode/**
+.vscode-test/**
+.gitignore
+.prettierignore
+**/tsconfig.json
+**/prettier.config.js
+**/.vscode-test.*
+
+# Project documentation
+vsc-extension-quickstart.md
+DEVELOPMENT.md
