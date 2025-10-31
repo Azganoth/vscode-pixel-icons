@@ -99,6 +99,12 @@ A pixel art icon theme for Visual Studio Code, giving your editor a retro feel.
       }
       ```
 
+1.  **Generate sample files and folders** by running:
+
+    ```bash
+    pnpm generate-samples
+    ```
+
 1.  **Test your changes** by running the extension (F5) and ensuring your new icon appears correctly.
 
 ## License

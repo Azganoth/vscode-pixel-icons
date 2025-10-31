@@ -4,6 +4,7 @@
 # Build output
 /out
 *.vsix
+samples/
 
 # VS Code
 .vscode/*

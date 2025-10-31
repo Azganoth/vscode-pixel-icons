@@ -4,6 +4,7 @@ node_modules/**
 # Build output
 out/test/**
 out/**/*.map
+samples/**
 
 # Source files
 src/**
