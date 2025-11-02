@@ -200,6 +200,18 @@
     },
     "test_js_file": {
       "iconPath": "./icons/js_test.png"
+    },
+    "prettier_file": {
+      "iconPath": "./icons/prettier.png"
+    },
+    "prettier_ignore_file": {
+      "iconPath": "./icons/prettier_ignore.png"
+    },
+    "eslint_file": {
+      "iconPath": "./icons/eslint.png"
+    },
+    "babel_file": {
+      "iconPath": "./icons/babel.png"
     }
   },
   "folder": "base_folder",
@@ -426,7 +438,43 @@
     "vite.config.ts": "vite_config_file",
     "vite.config.prod.ts": "vite_config_file",
     "vite.config.dev.ts": "vite_config_file",
+    ".prettierrc": "prettier_file",
+    ".prettierrc.json": "prettier_file",
+    ".prettierrc.yml": "prettier_file",
+    ".prettierrc.yaml": "prettier_file",
+    ".prettierrc.json5": "prettier_file",
+    ".prettierrc.toml": "prettier_file",
+    ".prettierrc.js": "prettier_file",
+    ".prettierrc.cjs": "prettier_file",
+    ".prettierrc.mjs": "prettier_file",
+    "prettier.config.js": "prettier_file",
+    "prettier.config.cjs": "prettier_file",
+    "prettier.config.mjs": "prettier_file",
+    ".prettierignore": "prettier_ignore_file",
+    "eslint.config.js": "eslint_file",
+    "eslint.config.cjs": "eslint_file",
+    "eslint.config.mjs": "eslint_file",
+    ".eslintrc": "eslint_file",
+    ".eslintrc.js": "eslint_file",
+    ".eslintrc.cjs": "eslint_file",
+    ".eslintrc.mjs": "eslint_file",
+    ".eslintrc.yaml": "eslint_file",
+    ".eslintrc.yml": "eslint_file",
+    ".eslintrc.json": "eslint_file",
     ".npmrc": "node_file",
-    ".nvmrc": "node_file"
+    ".nvmrc": "node_file",
+    ".babelrc": "babel_file",
+    ".babelrc.json": "babel_file",
+    ".babelrc.cjs": "babel_file",
+    ".babelrc.js": "babel_file",
+    ".babelrc.mjs": "babel_file",
+    ".babelrc.ts": "babel_file",
+    ".babelrc.cts": "babel_file",
+    "babel.config.json": "babel_file",
+    "babel.config.js": "babel_file",
+    "babel.config.cjs": "babel_file",
+    "babel.config.mjs": "babel_file",
+    "babel.config.ts": "babel_file",
+    "babel.config.cts": "babel_file"
   }
 }
