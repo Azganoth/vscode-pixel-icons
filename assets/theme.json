@@ -195,6 +195,18 @@
     "pnpm_lock_file": {
       "iconPath": "./icons/pnpm_lock.png"
     },
+    "pip_file": {
+      "iconPath": "./icons/pip.png"
+    },
+    "pip_lock_file": {
+      "iconPath": "./icons/pip_lock.png"
+    },
+    "cargo_lock_file": {
+      "iconPath": "./icons/cargo_lock.png"
+    },
+    "cargo_file": {
+      "iconPath": "./icons/cargo.png"
+    },
     "ts_def_file": {
       "iconPath": "./icons/ts_d.png"
     },
@@ -393,6 +405,14 @@
     "deno.json": "deno_file",
     "deno.jsonc": "deno_file",
     "deno.lock": "deno_lock_file",
+    "Cargo.toml": "cargo_file",
+    "Cargo.lock": "cargo_lock_file",
+    "Gemfile": "ruby_file",
+    "Gemfile.lock": "ruby_file",
+    "Rakefile": "ruby_file",
+    "requirements.txt": "pip_file",
+    "Pipfile": "pip_lock_file",
+    "Pipfile.lock": "pip_lock_file",
     ".gitignore": "git_file",
     ".gitattributes": "git_file",
     ".gitkeep": "git_file",
