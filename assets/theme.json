@@ -105,6 +105,9 @@
     "config_ts_file": {
       "iconPath": "./icons/tsconfig.png"
     },
+    "config_js_file": {
+      "iconPath": "./icons/jsconfig.png"
+    },
     "vite_config_file": {
       "iconPath": "./icons/viteconfig.png"
     },
@@ -159,6 +162,15 @@
     "python_file": {
       "iconPath": "./icons/python.png"
     },
+    "react_file": {
+      "iconPath": "./icons/react.png"
+    },
+    "test_react_file": {
+      "iconPath": "./icons/react_test.png"
+    },
+    "svelte_file": {
+      "iconPath": "./icons/svelte.png"
+    },
     "deno_file": {
       "iconPath": "./icons/deno.png"
     },
@@ -182,6 +194,12 @@
     },
     "pnpm_lock_file": {
       "iconPath": "./icons/pnpm_lock.png"
+    },
+    "ts_def_file": {
+      "iconPath": "./icons/ts_d.png"
+    },
+    "test_js_file": {
+      "iconPath": "./icons/js_test.png"
     }
   },
   "folder": "base_folder",
@@ -244,16 +262,29 @@
     "markdown": "markdown_file",
     "svg": "svg_file",
     "ts": "ts_file",
+    "d.ts": "ts_def_file",
     "js": "js_file",
     "cjs": "js_file",
     "mjs": "js_file",
     "test.ts": "test_ts_file",
     "spec.ts": "test_ts_file",
     "e2e.ts": "test_ts_file",
+    "test.js": "test_js_file",
+    "spec.js": "test_js_file",
+    "e2e.js": "test_js_file",
+    "jsx": "react_file",
+    "tsx": "react_file",
+    "test.jsx": "test_react_file",
+    "spec.jsx": "test_react_file",
+    "e2e.jsx": "test_react_file",
+    "test.tsx": "test_react_file",
+    "spec.tsx": "test_react_file",
+    "e2e.tsx": "test_react_file",
     "html": "html_file",
     "htm": "html_file",
     "css": "css_file",
     "vue": "vue_file",
+    "svelte": "svelte_file",
     "json": "json_file",
     "jsonc": "json_file",
     "json5": "json_file",
@@ -371,6 +402,18 @@
     "tsconfig.build.json": "config_ts_file",
     "tsconfig.dist.json": "config_ts_file",
     "tsconfig.release.json": "config_ts_file",
+    "jsconfig.json": "config_js_file",
+    "jsconfig.base.json": "config_js_file",
+    "jsconfig.dev.json": "config_js_file",
+    "jsconfig.prod.json": "config_js_file",
+    "jsconfig.test.json": "config_js_file",
+    "jsconfig.esm.json": "config_js_file",
+    "jsconfig.node.json": "config_js_file",
+    "jsconfig.browser.json": "config_js_file",
+    "jsconfig.server.json": "config_js_file",
+    "jsconfig.build.json": "config_js_file",
+    "jsconfig.dist.json": "config_js_file",
+    "jsconfig.release.json": "config_js_file",
     "vite.config.js": "vite_config_file",
     "vite.config.prod.js": "vite_config_file",
     "vite.config.dev.js": "vite_config_file",
