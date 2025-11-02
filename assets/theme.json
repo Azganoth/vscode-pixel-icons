@@ -54,6 +54,12 @@
     "dist_folder_expanded": {
       "iconPath": "./icons/folders/dist_folder_expanded.png"
     },
+    "node_folder": {
+      "iconPath": "./icons/folders/node_folder.png"
+    },
+    "node_folder_expanded": {
+      "iconPath": "./icons/folders/node_folder_expanded.png"
+    },
     "base_file": {
       "iconPath": "./icons/file.png"
     },
@@ -152,6 +158,30 @@
     },
     "python_file": {
       "iconPath": "./icons/python.png"
+    },
+    "deno_file": {
+      "iconPath": "./icons/deno.png"
+    },
+    "deno_lock_file": {
+      "iconPath": "./icons/deno_lock.png"
+    },
+    "bun_file": {
+      "iconPath": "./icons/bun.png"
+    },
+    "bun_lock_file": {
+      "iconPath": "./icons/bun_lock.png"
+    },
+    "node_file": {
+      "iconPath": "./icons/node.png"
+    },
+    "node_lock_file": {
+      "iconPath": "./icons/node_lock.png"
+    },
+    "pnpm_file": {
+      "iconPath": "./icons/pnpm.png"
+    },
+    "pnpm_lock_file": {
+      "iconPath": "./icons/pnpm_lock.png"
     }
   },
   "folder": "base_folder",
@@ -170,7 +200,7 @@
     "extensions": "extension_folder",
     "addons": "extension_folder",
     "plugins": "extension_folder",
-    "node_modules": "extension_folder",
+    "node_modules": "node_folder",
     "vendor": "extension_folder",
     "data": "data_folder",
     "docs": "data_folder",
@@ -195,7 +225,7 @@
     "extensions": "extension_folder_expanded",
     "addons": "extension_folder_expanded",
     "plugins": "extension_folder_expanded",
-    "node_modules": "extension_folder_expanded",
+    "node_modules": "node_folder_expanded",
     "vendor": "extension_folder_expanded",
     "data": "data_folder_expanded",
     "docs": "data_folder_expanded",
@@ -309,6 +339,17 @@
   },
   "fileNames": {
     "Dockerfile": "docker_file",
+    "package.json": "node_file",
+    "package-lock.json": "node_lock_file",
+    "pnpm-lock.yaml": "pnpm_lock_file",
+    "pnpm-workspace.yaml": "pnpm_file",
+    ".pnpmfile.cjs": "pnpm_file",
+    "bun.lock": "bun_lock_file",
+    "bun.lockb": "bun_lock_file",
+    "bunfig.toml": "bun_file",
+    "deno.json": "deno_file",
+    "deno.jsonc": "deno_file",
+    "deno.lock": "deno_lock_file",
     ".gitignore": "git_file",
     ".gitattributes": "git_file",
     ".gitkeep": "git_file",
@@ -316,6 +357,8 @@
     ".gitmodules": "git_file",
     ".gitmessage": "git_file",
     ".gitreview": "git_file",
+    ".node-version": "node_file",
+    "nodemon.json": "node_file",
     "tsconfig.json": "config_ts_file",
     "tsconfig.base.json": "config_ts_file",
     "tsconfig.dev.json": "config_ts_file",
@@ -339,6 +382,8 @@
     "vite.config.dev.mjs": "vite_config_file",
     "vite.config.ts": "vite_config_file",
     "vite.config.prod.ts": "vite_config_file",
-    "vite.config.dev.ts": "vite_config_file"
+    "vite.config.dev.ts": "vite_config_file",
+    ".npmrc": "node_file",
+    ".nvmrc": "node_file"
   }
 }
