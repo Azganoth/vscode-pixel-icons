@@ -165,6 +165,9 @@
     "python_file": {
       "iconPath": "./icons/python.png"
     },
+    "font_file": {
+      "iconPath": "./icons/font.png"
+    },
     "yaml_file": {
       "iconPath": "./icons/yaml.png"
     },
@@ -366,6 +369,10 @@
     "zsh": "terminal_file",
     "fish": "terminal_file",
     "ps1": "powershell_file",
+    "ttf": "font_file",
+    "otf": "font_file",
+    "woff": "font_file",
+    "woff2": "font_file",
     "json": "json_file",
     "jsonc": "json_file",
     "json5": "json_file",
