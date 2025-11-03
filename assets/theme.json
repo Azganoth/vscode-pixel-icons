@@ -275,6 +275,9 @@
     },
     "robots_file": {
       "iconPath": "./icons/robots.png"
+    },
+    "babel_file": {
+      "iconPath": "./icons/babel.png"
     }
   },
   "folder": "base_folder",
