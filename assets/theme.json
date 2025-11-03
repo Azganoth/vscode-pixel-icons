@@ -162,6 +162,15 @@
     "python_file": {
       "iconPath": "./icons/python.png"
     },
+    "yaml_file": {
+      "iconPath": "./icons/yaml.png"
+    },
+    "toml_file": {
+      "iconPath": "./icons/toml.png"
+    },
+    "xml_file": {
+      "iconPath": "./icons/xml.png"
+    },
     "react_file": {
       "iconPath": "./icons/react.png"
     },
@@ -170,6 +179,9 @@
     },
     "svelte_file": {
       "iconPath": "./icons/svelte.png"
+    },
+    "config_file": {
+      "iconPath": "./icons/config.png"
     },
     "deno_file": {
       "iconPath": "./icons/deno.png"
@@ -222,8 +234,8 @@
     "eslint_file": {
       "iconPath": "./icons/eslint.png"
     },
-    "babel_file": {
-      "iconPath": "./icons/babel.png"
+    "env_file": {
+      "iconPath": "./icons/env.png"
     }
   },
   "folder": "base_folder",
@@ -282,6 +294,11 @@
   "fileExtensions": {
     "txt": "text_file",
     "log": "text_file",
+    "ini": "config_file",
+    "config": "config_file",
+    "conf": "config_file",
+    "cfg": "config_file",
+    "properties": "config_file",
     "md": "markdown_file",
     "markdown": "markdown_file",
     "svg": "svg_file",
@@ -309,6 +326,10 @@
     "css": "css_file",
     "vue": "vue_file",
     "svelte": "svelte_file",
+    "xml": "xml_file",
+    "yml": "yaml_file",
+    "yaml": "yaml_file",
+    "toml": "toml_file",
     "json": "json_file",
     "jsonc": "json_file",
     "json5": "json_file",
@@ -394,6 +415,7 @@
   },
   "fileNames": {
     "Dockerfile": "docker_file",
+    ".editorconfig": "config_file",
     "package.json": "node_file",
     "package-lock.json": "node_lock_file",
     "pnpm-lock.yaml": "pnpm_lock_file",
@@ -420,6 +442,21 @@
     ".gitmodules": "git_file",
     ".gitmessage": "git_file",
     ".gitreview": "git_file",
+    ".env": "env_file",
+    ".env.example": "env_file",
+    ".env.local": "env_file",
+    ".env.development": "env_file",
+    ".env.production": "env_file",
+    ".env.test": "env_file",
+    ".env.staging": "env_file",
+    ".env.development.local": "env_file",
+    ".env.production.local": "env_file",
+    ".env.test.local": "env_file",
+    ".env.staging.local": "env_file",
+    ".env.development.example": "env_file",
+    ".env.production.example": "env_file",
+    ".env.test.example": "env_file",
+    ".env.staging.example": "env_file",
     ".node-version": "node_file",
     "nodemon.json": "node_file",
     "tsconfig.json": "config_ts_file",
