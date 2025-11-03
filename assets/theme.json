@@ -153,6 +153,9 @@
     "docker_file": {
       "iconPath": "./icons/docker.png"
     },
+    "docker_ignore_file": {
+      "iconPath": "./icons/docker_ignore.png"
+    },
     "blender_file": {
       "iconPath": "./icons/blend.png"
     },
@@ -427,6 +430,35 @@
   },
   "fileNames": {
     "Dockerfile": "docker_file",
+    ".dockerignore": "docker_ignore_file",
+    "docker-compose.yml": "docker_file",
+    "docker-compose.yaml": "docker_file",
+    "docker-compose.override.yml": "docker_file",
+    "docker-compose.override.yaml": "docker_file",
+    "docker-compose.ci.yml": "docker_file",
+    "docker-compose.ci.yaml": "docker_file",
+    "docker-compose.ci.override.yml": "docker_file",
+    "docker-compose.ci.override.yaml": "docker_file",
+    "docker-compose.prod.yml": "docker_file",
+    "docker-compose.prod.yaml": "docker_file",
+    "docker-compose.prod.override.yml": "docker_file",
+    "docker-compose.prod.override.yaml": "docker_file",
+    "docker-compose.staging.yml": "docker_file",
+    "docker-compose.staging.yaml": "docker_file",
+    "docker-compose.staging.override.yml": "docker_file",
+    "docker-compose.staging.override.yaml": "docker_file",
+    "docker-compose.test.yml": "docker_file",
+    "docker-compose.test.yaml": "docker_file",
+    "docker-compose.test.override.yml": "docker_file",
+    "docker-compose.test.override.yaml": "docker_file",
+    "docker-compose.dev.yml": "docker_file",
+    "docker-compose.dev.yaml": "docker_file",
+    "docker-compose.dev.override.yml": "docker_file",
+    "docker-compose.dev.override.yaml": "docker_file",
+    "docker-compose.local.yml": "docker_file",
+    "docker-compose.local.yaml": "docker_file",
+    "docker-compose.local.override.yml": "docker_file",
+    "docker-compose.local.override.yaml": "docker_file",
     ".editorconfig": "config_file",
     "package.json": "node_file",
     "package-lock.json": "node_lock_file",
