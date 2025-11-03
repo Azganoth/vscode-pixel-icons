@@ -222,6 +222,18 @@
     "powershell_file": {
       "iconPath": "./icons/powershell.png"
     },
+    "vs_file": {
+      "iconPath": "./icons/vs.png"
+    },
+    "vscode_file": {
+      "iconPath": "./icons/vscode.png"
+    },
+    "vscode_ignore_file": {
+      "iconPath": "./icons/vscode_ignore.png"
+    },
+    "vscode_ext_file": {
+      "iconPath": "./icons/vscode_ext.png"
+    },
     "cargo_lock_file": {
       "iconPath": "./icons/cargo_lock.png"
     },
@@ -426,7 +438,10 @@
     "db": "db_file",
     "sql": "db_file",
     "sqlite": "db_file",
-    "sqlite3": "db_file"
+    "sqlite3": "db_file",
+    "sln": "vs_file",
+    "csproj": "vs_file",
+    "vsix": "vscode_ext_file"
   },
   "fileNames": {
     "Dockerfile": "docker_file",
@@ -582,6 +597,8 @@
     ".profile": "terminal_file",
     ".bash_profile": "terminal_file",
     ".bash_history": "terminal_file",
-    ".zprofile": "terminal_file"
+    ".zprofile": "terminal_file",
+    ".vscode": "vscode_file",
+    ".vscodeignore": "vscode_ignore_file"
   }
 }
