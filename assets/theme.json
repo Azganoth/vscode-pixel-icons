@@ -234,11 +234,17 @@
     "vscode_ext_file": {
       "iconPath": "./icons/vscode_ext.png"
     },
+    "license_file": {
+      "iconPath": "./icons/license.png"
+    },
     "cargo_lock_file": {
       "iconPath": "./icons/cargo_lock.png"
     },
     "cargo_file": {
       "iconPath": "./icons/cargo.png"
+    },
+    "gemini_file": {
+      "iconPath": "./icons/gemini.png"
     },
     "ts_def_file": {
       "iconPath": "./icons/ts_d.png"
@@ -257,6 +263,9 @@
     },
     "env_file": {
       "iconPath": "./icons/env.png"
+    },
+    "robots_file": {
+      "iconPath": "./icons/robots.png"
     }
   },
   "folder": "base_folder",
@@ -516,6 +525,14 @@
     ".env.production.example": "env_file",
     ".env.test.example": "env_file",
     ".env.staging.example": "env_file",
+    "robots.txt": "robots_file",
+    "LICENSE": "license_file",
+    "LICENSE.md": "license_file",
+    "LICENSE.txt": "license_file",
+    "COPYING": "license_file",
+    "COPYING.md": "license_file",
+    "COPYING.txt": "license_file",
+    "GEMINI.md": "gemini_file",
     ".node-version": "node_file",
     "nodemon.json": "node_file",
     "tsconfig.json": "config_ts_file",
