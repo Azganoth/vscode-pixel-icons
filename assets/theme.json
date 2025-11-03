@@ -213,6 +213,12 @@
     "pip_lock_file": {
       "iconPath": "./icons/pip_lock.png"
     },
+    "terminal_file": {
+      "iconPath": "./icons/terminal.png"
+    },
+    "powershell_file": {
+      "iconPath": "./icons/powershell.png"
+    },
     "cargo_lock_file": {
       "iconPath": "./icons/cargo_lock.png"
     },
@@ -330,6 +336,12 @@
     "yml": "yaml_file",
     "yaml": "yaml_file",
     "toml": "toml_file",
+    "sh": "terminal_file",
+    "bat": "terminal_file",
+    "cmd": "terminal_file",
+    "zsh": "terminal_file",
+    "fish": "terminal_file",
+    "ps1": "powershell_file",
     "json": "json_file",
     "jsonc": "json_file",
     "json5": "json_file",
@@ -532,6 +544,12 @@
     "babel.config.cjs": "babel_file",
     "babel.config.mjs": "babel_file",
     "babel.config.ts": "babel_file",
-    "babel.config.cts": "babel_file"
+    "babel.config.cts": "babel_file",
+    ".bashrc": "terminal_file",
+    ".zshrc": "terminal_file",
+    ".profile": "terminal_file",
+    ".bash_profile": "terminal_file",
+    ".bash_history": "terminal_file",
+    ".zprofile": "terminal_file"
   }
 }
