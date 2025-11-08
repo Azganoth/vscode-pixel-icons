@@ -278,6 +278,9 @@
     },
     "babel_file": {
       "iconPath": "./icons/babel.png"
+    },
+    "prisma_file": {
+      "iconPath": "./icons/prisma.png"
     }
   },
   "folder": "base_folder",
@@ -468,7 +471,8 @@
     "sqlite3": "db_file",
     "sln": "vs_file",
     "csproj": "vs_file",
-    "vsix": "vscode_ext_file"
+    "vsix": "vscode_ext_file",
+    "prisma": "prisma_file"
   },
   "fileNames": {
     "Dockerfile": "docker_file",
