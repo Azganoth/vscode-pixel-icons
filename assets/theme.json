@@ -281,6 +281,12 @@
     },
     "prisma_file": {
       "iconPath": "./icons/prisma.png"
+    },
+    "sass_file": {
+      "iconPath": "./icons/sass.png"
+    },
+    "less_file": {
+      "iconPath": "./icons/less.png"
     }
   },
   "folder": "base_folder",
@@ -369,6 +375,9 @@
     "html": "html_file",
     "htm": "html_file",
     "css": "css_file",
+    "scss": "sass_file",
+    "sass": "sass_file",
+    "less": "less_file",
     "vue": "vue_file",
     "svelte": "svelte_file",
     "lua": "lua_file",
