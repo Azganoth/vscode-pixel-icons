@@ -120,11 +120,11 @@
     "c_file": {
       "iconPath": "./icons/c.png"
     },
-    "c++_file": {
-      "iconPath": "./icons/c++.png"
+    "cpp_file": {
+      "iconPath": "./icons/cpp.png"
     },
-    "c#_file": {
-      "iconPath": "./icons/c#.png"
+    "csharp_file": {
+      "iconPath": "./icons/csharp.png"
     },
     "header_file": {
       "iconPath": "./icons/h.png"
@@ -407,17 +407,17 @@
     "gz": "zip_file",
     "tgz": "zip_file",
     "c": "c_file",
-    "c++": "c++_file",
-    "cp": "c++_file",
-    "cpp": "c++_file",
-    "cc": "c++_file",
-    "cxx": "c++_file",
+    "c++": "cpp_file",
+    "cp": "cpp_file",
+    "cpp": "cpp_file",
+    "cc": "cpp_file",
+    "cxx": "cpp_file",
     "h": "header_file",
     "hpp": "header_file",
     "hh": "header_file",
     "hxx": "header_file",
-    "cs": "c#_file",
-    "csx": "c#_file",
+    "cs": "csharp_file",
+    "csx": "csharp_file",
     "rs": "rust_file",
     "rb": "ruby_file",
     "erb": "ruby_file",
