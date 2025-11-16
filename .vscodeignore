@@ -8,6 +8,7 @@ samples/**
 
 # Source files
 src/**
+scripts/**
 
 # Development tool configuration
 .vscode/**
