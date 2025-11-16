@@ -1,7 +1,7 @@
 {
   "name": "pixel-icons",
   "displayName": "Pixel Icons",
-  "description": "pixel art icons for vscode",
+  "description": "Pixel art icons for vscode",
   "version": "0.0.0",
   "engines": {
     "vscode": "^1.105.0"
@@ -31,7 +31,7 @@
     "format": "prettier --write .",
     "lint": "eslint src",
     "test": "vscode-test",
-    "generate-samples": "node scripts/generate_samples.mjs"
+    "generate-samples": "node scripts/generate-samples.mjs"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",

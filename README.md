@@ -1,6 +1,9 @@
 # Pixel Icons 👾
 
-> A pixel art icon theme for Visual Studio Code, giving your editor a retro feel.
+A pixel art icon theme for Visual Studio Code, giving your editor a retro feel.
+
+> [!NOTE]
+> Window zoom level `0` is recommended, otherwise the icons will look blurry.
 
 ## Features
 
