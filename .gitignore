@@ -6,6 +6,10 @@
 *.vsix
 samples/
 
+# Configuration files
+.vercel/
+.env*.local
+
 # VS Code
 .vscode/*
 !.vscode/tasks.json

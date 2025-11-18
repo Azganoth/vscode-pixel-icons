@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Icons - VS Code Theme</title>
+    <meta
+      name="description"
+      content="A handcrafted 16x16 pixel art icon theme for Visual Studio Code."
+    />
+    <link rel="icon" type="image/png" href="/assets/icons/vscode.png" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vscode-pixel-icons.vercel.app/" />
+    <meta property="og:title" content="Pixel Icons - VS Code Theme" />
+    <meta
+      property="og:description"
+      content="A handcrafted 16x16 pixel art icon theme for Visual Studio Code."
+    />
+    <meta property="og:image" content="./images/preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/docs/shared.css" />
+    <style>
+      @layer module {
+        :root {
+          --container-width: 1000px;
+          --grid-gap: 1rem;
+          --icon-size: 2rem;
+        }
+
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+          text-align: center;
+          padding: 5rem 1.25rem 3.75rem;
+          max-width: 50rem;
+        }
+
+        h1 {
+          margin-bottom: 2rem;
+          font-size: 3rem;
+          letter-spacing: 1px;
+        }
+
+        p.subtitle {
+          margin-bottom: 3rem;
+          color: var(--text-secondary);
+          font-size: 1.25rem;
+          line-height: 1.6;
+        }
+
+        .actions {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.75rem 1rem;
+          border-radius: 999px;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+          background-color: var(--accent);
+          color: white;
+          box-shadow: 0 0.25rem 0.875rem oklch(from var(--accent) l c h / 0.3);
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: var(--accent-hover);
+              box-shadow: 0 0.375rem 1.25rem
+                oklch(from var(--accent) l c h / 0.4);
+              translate: 0 -0.125rem;
+            }
+          }
+        }
+
+        .btn-secondary {
+          background-color: transparent;
+          color: var(--text-primary);
+          border: 1px solid var(--border);
+
+          @media (hover: hover) {
+            &:hover {
+              border-color: var(--border-light);
+              background-color: var(--surface);
+              translate: 0 -0.125rem;
+            }
+          }
+        }
+
+        /* Main Content */
+        main {
+          width: 100%;
+          max-width: var(--container-width);
+          padding: 1.25rem 1.25rem 3.75rem;
+        }
+
+        section {
+          &:not(:last-child) {
+            margin-bottom: 3.5rem;
+          }
+
+          &:last-child {
+            margin-bottom: 5rem;
+          }
+        }
+
+        h2 {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          border-bottom: 1px solid var(--border);
+          padding-bottom: 1rem;
+          margin-bottom: 1.5rem;
+          font-size: 1.5rem;
+        }
+
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fill,
+            minmax(7.5rem, 1fr)
+          ); /* 120px */
+          gap: var(--grid-gap);
+        }
+
+        .icon-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem 0.75rem;
+          border: 1px solid var(--border);
+          border-radius: 0.75rem;
+          background: var(--surface);
+          user-select: none;
+          transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+          @media (hover: hover) {
+            &:hover {
+              border-color: var(--accent);
+              background-color: var(--surface-hover);
+              box-shadow: 0 0.5rem 1.5rem oklch(0 0 0 / 0.3);
+              translate: 0 -0.25rem;
+            }
+          }
+
+          img {
+            width: var(--icon-size);
+            height: var(--icon-size);
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0.25rem 0.375rem oklch(0 0 0 / 0.3));
+            image-rendering: pixelated;
+          }
+
+          span {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            text-align: center;
+          }
+
+          .folder-pair {
+            display: flex;
+            gap: 0.75rem;
+          }
+        }
+
+        footer {
+          width: 100%;
+          margin-top: auto;
+          border-top: 1px solid var(--border);
+          padding: 3.75rem 1.25rem;
+          background-color: oklch(from var(--bg) calc(l - 0.04) c h);
+          color: var(--text-secondary);
+          font-size: 0.95rem;
+          text-align: center;
+
+          a {
+            border-bottom: 1px dotted var(--border-light);
+            color: var(--text-primary);
+            text-decoration: none;
+
+            &:hover {
+              color: var(--accent);
+              border-bottom-style: solid;
+            }
+          }
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+          h1 {
+            font-size: 2rem;
+          }
+
+          .grid {
+            grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+          }
+
+          .actions {
+            flex-direction: column;
+            width: 100%;
+          }
+
+          .btn {
+            justify-content: center;
+            width: 100%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pixel Icons</h1>
+      <p class="subtitle">
+        A handcrafted 16x16 pixel art icon theme for Visual Studio Code.
+        <br />
+        Retro charm meets modern development.
+      </p>
+      <div class="actions">
+        <a href="vscode:extension/Azganoth.pixel-icons" class="btn btn-primary">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+            ></path>
+            <path
+              d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+            ></path>
+          </svg>
+          Install Extension
+        </a>
+        <a
+          href="https://github.com/Azganoth/vscode-pixel-icons"
+          class="btn btn-secondary"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Web Development -->
+      <section>
+        <h2>Web Development</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/html.png" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/css.png" alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/js.png" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/ts.png" alt="TypeScript" />
+            <span>TypeScript</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/js_test.png" alt="JS Test" />
+            <span>JS Test</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/ts_test.png" alt="TS Test" />
+            <span>TS Test</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/ts_d.png" alt="Types" />
+            <span>TS Defs</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/svelte.png" alt="Svelte" />
+            <span>Svelte</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/vue.png" alt="Vue" />
+            <span>Vue</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/react.png" alt="React" />
+            <span>React</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/react_test.png" alt="React Test" />
+            <span>React Test</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/sass.png" alt="Sass" />
+            <span>Sass</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/less.png" alt="Less" />
+            <span>Less</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section>
+        <h2>Languages</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/ruby.png" alt="Ruby" />
+            <span>Ruby</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/rust.png" alt="Rust" />
+            <span>Rust</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/c.png" alt="C" />
+            <span>C</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/cpp.png" alt="C++" />
+            <span>C++</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/csharp.png" alt="C#" />
+            <span>C#</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/h.png" alt="Header" />
+            <span>C/C++ Header</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/lua.png" alt="Lua" />
+            <span>Lua</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/gdscript.png" alt="GDScript" />
+            <span>GDScript</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/powershell.png" alt="PowerShell" />
+            <span>PowerShell</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/terminal.png" alt="Terminal" />
+            <span>Shell</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Runtimes & Managers -->
+      <section>
+        <h2>Runtimes & Managers</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/node.png" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/bun.png" alt="Bun" />
+            <span>Bun</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/deno.png" alt="Deno" />
+            <span>Deno</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/pnpm.png" alt="PNPM" />
+            <span>PNPM</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/pip.png" alt="Pip" />
+            <span>Pip</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/cargo.png" alt="Cargo" />
+            <span>Cargo</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Configuration & Tools -->
+      <section>
+        <h2>Config & Tools</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/git.png" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/docker.png" alt="Docker" />
+            <span>Docker</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/docker_ignore.png" alt="Docker Ignore" />
+            <span>Docker Ign</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/eslint.png" alt="ESLint" />
+            <span>ESLint</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/prettier.png" alt="Prettier" />
+            <span>Prettier</span>
+          </div>
+          <div class="icon-card">
+            <img
+              src="/assets/icons/prettier_ignore.png"
+              alt="Prettier Ignore"
+            />
+            <span>Prettier Ign</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/config.png" alt="Config" />
+            <span>Settings</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/env.png" alt="Env" />
+            <span>Env</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/babel.png" alt="Babel" />
+            <span>Babel</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/viteconfig.png" alt="Vite" />
+            <span>Vite</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/tsconfig.png" alt="TS Config" />
+            <span>TS Config</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/jsconfig.png" alt="JS Config" />
+            <span>JS Config</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/vscode.png" alt="VS Code" />
+            <span>VS Code</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/vscode_ignore.png" alt="VS Code Ignore" />
+            <span>VSC Ign</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/vscode_ext.png" alt="Extension" />
+            <span>Extension</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/vs.png" alt="Visual Studio" />
+            <span>Visual Studio</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/gemini.png" alt="Gemini" />
+            <span>Gemini</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/license.png" alt="License" />
+            <span>License</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/robots.png" alt="Robots" />
+            <span>Robots</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/toc.png" alt="TOC" />
+            <span>Toc</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data & Formats -->
+      <section>
+        <h2>Data & Formats</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/json.png" alt="JSON" />
+            <span>JSON</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/xml.png" alt="XML" />
+            <span>XML</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/yaml.png" alt="YAML" />
+            <span>YAML</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/toml.png" alt="TOML" />
+            <span>TOML</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/db.png" alt="Database" />
+            <span>Database</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/prisma.png" alt="Prisma" />
+            <span>Prisma</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creative & Media -->
+      <section>
+        <h2>Creative & Media</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/image.png" alt="Image" />
+            <span>Image</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/svg.png" alt="SVG" />
+            <span>SVG</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/font.png" alt="Font" />
+            <span>Font</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/video.png" alt="Video" />
+            <span>Video</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/sound.png" alt="Audio" />
+            <span>Audio</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/blend.png" alt="Blender" />
+            <span>Blender</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/model.png" alt="Model" />
+            <span>3D Model</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/ase.png" alt="Aseprite" />
+            <span>Aseprite</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/tscn.png" alt="Godot Scene" />
+            <span>Godot Scene</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/tres.png" alt="Godot Resource" />
+            <span>Godot Res</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Generic Files -->
+      <section>
+        <h2>Generic Files</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <img src="/assets/icons/file.png" alt="File" />
+            <span>File</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/text.png" alt="Text" />
+            <span>Text</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/markdown.png" alt="Markdown" />
+            <span>Markdown</span>
+          </div>
+          <div class="icon-card">
+            <img src="/assets/icons/zip.png" alt="Zip" />
+            <span>Archive</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Folders -->
+      <section>
+        <h2>Folders</h2>
+        <div class="grid">
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/folder.png" alt="Folder" />
+              <img
+                src="/assets/icons/folders/folder_expanded.png"
+                alt="Folder Open"
+              />
+            </div>
+            <span>Generic</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/asset_folder.png" alt="Assets" />
+              <img
+                src="/assets/icons/folders/asset_folder_expanded.png"
+                alt="Assets Open"
+              />
+            </div>
+            <span>Assets</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/data_folder.png" alt="Data" />
+              <img
+                src="/assets/icons/folders/data_folder_expanded.png"
+                alt="Data Open"
+              />
+            </div>
+            <span>Data</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/dist_folder.png" alt="Dist" />
+              <img
+                src="/assets/icons/folders/dist_folder_expanded.png"
+                alt="Dist Open"
+              />
+            </div>
+            <span>Dist</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img
+                src="/assets/icons/folders/extension_folder.png"
+                alt="Extensions"
+              />
+              <img
+                src="/assets/icons/folders/extension_folder_expanded.png"
+                alt="Extensions Open"
+              />
+            </div>
+            <span>Extension</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/model_folder.png" alt="Models" />
+              <img
+                src="/assets/icons/folders/model_folder_expanded.png"
+                alt="Models Open"
+              />
+            </div>
+            <span>Models</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/node_folder.png" alt="Node" />
+              <img
+                src="/assets/icons/folders/node_folder_expanded.png"
+                alt="Node Open"
+              />
+            </div>
+            <span>Node</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/python_folder.png" alt="Python" />
+              <img
+                src="/assets/icons/folders/python_folder_expanded.png"
+                alt="Python Open"
+              />
+            </div>
+            <span>Python</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img src="/assets/icons/folders/sound_folder.png" alt="Sound" />
+              <img
+                src="/assets/icons/folders/sound_folder_expanded.png"
+                alt="Sound Open"
+              />
+            </div>
+            <span>Sound</span>
+          </div>
+          <div class="icon-card">
+            <div class="folder-pair">
+              <img
+                src="/assets/icons/folders/vscode_folder.png"
+                alt="VS Code"
+              />
+              <img
+                src="/assets/icons/folders/vscode_folder_expanded.png"
+                alt="VS Code Open"
+              />
+            </div>
+            <span>.vscode</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Created by <a href="https://github.com/Azganoth">Azganoth</a> &bull;
+        Inspired by <a href="https://github.com/Platinumaniac">Platinumaniac</a>
+      </p>
+      <p>
+        <a href="LICENSE.md">MIT License</a> &bull;
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=Azganoth.pixel-icons"
+        >
+          VS Marketplace
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
