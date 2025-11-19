@@ -60,6 +60,12 @@
     "node_folder_expanded": {
       "iconPath": "./icons/folders/node_folder_expanded.png"
     },
+    "vercel_folder": {
+      "iconPath": "./icons/folders/vercel_folder.png"
+    },
+    "vercel_folder_expanded": {
+      "iconPath": "./icons/folders/vercel_folder_expanded.png"
+    },
     "base_file": {
       "iconPath": "./icons/file.png"
     },
@@ -287,6 +293,12 @@
     },
     "less_file": {
       "iconPath": "./icons/less.png"
+    },
+    "vercel_file": {
+      "iconPath": "./icons/vercel.png"
+    },
+    "vercel_ignore_file": {
+      "iconPath": "./icons/vercel_ignore.png"
     }
   },
   "folder": "base_folder",
@@ -315,6 +327,7 @@
     "out": "dist_folder",
     "target": "dist_folder",
     ".vscode": "vscode_folder",
+    ".vercel": "vercel_folder",
     "python": "python_folder"
   },
   "folderNamesExpanded": {
@@ -340,6 +353,7 @@
     "out": "dist_folder_expanded",
     "target": "dist_folder_expanded",
     ".vscode": "vscode_folder_expanded",
+    ".vercel": "vercel_folder_expanded",
     "python": "python_folder_expanded"
   },
   "fileExtensions": {
@@ -646,6 +660,8 @@
     ".bash_profile": "terminal_file",
     ".bash_history": "terminal_file",
     ".zprofile": "terminal_file",
+    "vercel.json": "vercel_file",
+    ".vercelignore": "vercel_ignore_file",
     ".vscode": "vscode_file",
     ".vscodeignore": "vscode_ignore_file"
   }
