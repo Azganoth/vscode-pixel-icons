@@ -8,6 +8,7 @@ A pixel art icon theme for Visual Studio Code.
 
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/Azganoth.pixel-icons?style=for-the-badge&label=VS%20Marketplace&labelColor=1F1F1F&logo=visual-studio-code&color=0077b9)](https://marketplace.visualstudio.com/items?itemName=Azganoth.pixel-icons)
 [![Website](https://img.shields.io/badge/Full%20Icon%20List-Website-0077b9?style=for-the-badge&labelColor=1F1F1F&logo=vercel&logoColor=white)](https://vscode-pixel-icons.vercel.app/)
+[![Request Icon](https://img.shields.io/badge/Request%20Icon-New%20Issue-0077b9?style=for-the-badge&labelColor=1F1F1F&logo=github&logoColor=white)](https://github.com/Azganoth/vscode-pixel-icons/issues/new?&labels=enhancement,icon%20request)
 
 </div>
 
