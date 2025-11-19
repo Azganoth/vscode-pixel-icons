@@ -1,15 +1,24 @@
-# Pixel Icons 👾
+<div align="center">
 
-A pixel art icon theme for Visual Studio Code, giving your editor a retro feel.
+![Pixel Icons](docs/images/header.png)
+
+A pixel art icon theme for Visual Studio Code.
+
+![Preview of Pixel Icons Theme](docs/images/sheet.png)
+
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/Azganoth.pixel-icons?style=for-the-badge&label=VS%20Marketplace&labelColor=1F1F1F&logo=visual-studio-code&color=0077b9)](https://marketplace.visualstudio.com/items?itemName=Azganoth.pixel-icons)
+[![Website](https://img.shields.io/badge/Full%20Icon%20List-Website-0077b9?style=for-the-badge&labelColor=1F1F1F&logo=vercel&logoColor=white)](https://vscode-pixel-icons.vercel.app/)
+
+</div>
 
 > [!NOTE]
-> Window zoom level `0` is recommended, otherwise the icons will look blurry.
+> For best results set your Window Zoom Level to `0`. Anti-aliasing at non-integer scales makes pixel art look blurry.
 
-## Features
+## Why Pixel Icons?
 
-- 🎨 **Pixel Art Style:** Hand-crafted 16x16 pixel art icons.
-- 📂 **Extensive Support:** Covers common file types, configuration files, and folders.
-- 🕶️ **Retro Vibes:** Perfect for those who love the 8-bit aesthetic.
+I've always liked the 8-bit aesthetic, but I struggled to find a VS Code icon theme that felt truly complete.
+
+Inspired by the excellent work of [Platinumaniac](https://github.com/Platinumaniac), I used their icons as a foundation and massively expanded the set. My goal is to cover most of the modern dev stack while keeping that crisp, hand-crafted retro feel. 🙂
 
 ## Installation
 
@@ -26,10 +35,6 @@ A pixel art icon theme for Visual Studio Code, giving your editor a retro feel.
 ## Contributing
 
 Want to add a new icon or fix a bug? Please read [DEVELOPMENT.md](DEVELOPMENT.md) for setup and contribution guidelines.
-
-## Credits
-
-This theme was inspired by the work of [Platinumaniac](https://github.com/Platinumaniac) and their project [vscode-plat-pixel-icons](https://github.com/Platinumaniac/vscode-plat-pixel-icons). Some of the initial icons were from this source.
 
 ## License
 
