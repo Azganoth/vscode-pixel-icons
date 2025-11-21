@@ -1,25 +1,15 @@
-# Dependencies
-node_modules/**
+*
+*/**
 
-# Build output
-out/test/**
-out/**/*.map
-samples/**
+# Essential Metadata
+!package.json
+!README.md
+!CHANGELOG.md
+!LICENSE.md
+!icon.png
 
-# Source files
-src/**
-scripts/**
-docs/**
+# Compiled Source Code
+!out/**
 
-# Development tool configuration
-.vscode/**
-.vscode-test/**
-.gitignore
-.prettierignore
-**/tsconfig.json
-**/prettier.config.js
-**/.vscode-test.*
-
-# Project documentation
-vsc-extension-quickstart.md
-DEVELOPMENT.md
+# Extension Assets
+!assets/**
