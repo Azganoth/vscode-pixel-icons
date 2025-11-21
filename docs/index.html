@@ -35,7 +35,7 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body x-data="iconGallery">
+  <body>
     <header>
       <h1>Pixel Icons</h1>
       <p class="subtitle">
@@ -100,13 +100,22 @@
       </div>
     </header>
 
-    <main>
+    <main x-data="gallery">
       <template x-for="section in sections" :key="section.title">
         <section>
           <h2 x-text="section.title"></h2>
           <div class="grid">
             <template x-for="icon in section.icons" :key="icon.name">
-              <div class="icon-card">
+              <div
+                class="icon-card"
+                tabindex="0"
+                @mouseenter="$store.ui.handleMouseEnter(icon)"
+                @mouseleave="$store.ui.handleMouseLeave()"
+                @focus="$store.ui.handleFocus(icon)"
+                @blur="$store.ui.handleBlur()"
+                :class="{ 'is-active': $store.ui.focusedIcon === icon }"
+                :data-tooltip="icon.tooltip"
+              >
                 <template x-if="Array.isArray(icon.src)">
                   <div class="folder-pair">
                     <img :src="icon.src[0]" :alt="icon.name" />
@@ -145,5 +154,23 @@
         <a href="https://ko-fi.com/azganoth">Buy me a Coffee</a>
       </p>
     </footer>
+
+    <aside id="status-bar" x-data>
+      <div class="status-content">
+        <img
+          id="status-icon-img"
+          :src="$store.ui.statusIcon"
+          x-show="$store.ui.statusIcon"
+          alt=""
+        />
+        <span
+          id="status-main-text"
+          x-text="$store.ui.statusText"
+          aria-live="polite"
+        >
+          Hover or tap over an icon to see details
+        </span>
+      </div>
+    </aside>
   </body>
 </html>
