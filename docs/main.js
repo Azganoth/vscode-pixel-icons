@@ -228,6 +228,8 @@ const iconSections = [
 ];
 
 const DEFAULT_STATUS_TEXT = "Hover or tap over an icon to see details";
+const DEFAULT_ICON =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
 
 document.addEventListener("alpine:init", () => {
   // @ts-ignore
@@ -239,8 +241,8 @@ document.addEventListener("alpine:init", () => {
   Alpine.store("ui", {
     defaultText: DEFAULT_STATUS_TEXT,
     statusText: DEFAULT_STATUS_TEXT,
-    /** @type {string|null} */
-    statusIcon: null,
+    statusIcon: DEFAULT_ICON,
+    isShowingIcon: false,
     /** @type {IconItem|null} */
     focusedIcon: null,
 
@@ -277,11 +279,12 @@ document.addEventListener("alpine:init", () => {
      */
     updateStatus(icon) {
       this.statusIcon = Array.isArray(icon.src) ? icon.src[0] : icon.src;
+      this.isShowingIcon = true;
       this.statusText = icon.tooltip || icon.name;
     },
 
     resetStatus() {
-      this.statusIcon = null;
+      this.isShowingIcon = false;
       this.statusText = this.defaultText;
     },
   });

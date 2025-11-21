@@ -135,23 +135,31 @@
 
     <footer>
       <p>
-        Created by <a href="https://github.com/Azganoth">Azganoth</a> &bull;
-        Inspired by <a href="https://github.com/Platinumaniac">Platinumaniac</a>
+        Created by
+        <a href="https://github.com/Azganoth" class="footer-link">Azganoth</a>
+        &bull; Inspired by
+        <a href="https://github.com/Platinumaniac" class="footer-link">
+          Platinumaniac
+        </a>
       </p>
       <p>
         <a
           href="https://raw.githubusercontent.com/Azganoth/vscode-pixel-icons/refs/heads/main/LICENSE.md"
+          class="footer-link"
         >
           MIT License
         </a>
         &bull;
         <a
           href="https://marketplace.visualstudio.com/items?itemName=Azganoth.pixel-icons"
+          class="footer-link"
         >
           VS Marketplace
         </a>
         &bull;
-        <a href="https://ko-fi.com/azganoth">Buy me a Coffee</a>
+        <a href="https://ko-fi.com/azganoth" class="footer-link">
+          Buy me a Coffee
+        </a>
       </p>
     </footer>
 
@@ -159,12 +167,14 @@
       <div class="status-content">
         <img
           id="status-icon-img"
-          :src="$store.ui.statusIcon"
-          x-show="$store.ui.statusIcon"
+          class="status-icon"
+          :src="$store.ui.statusIcon || 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='"
+          :class="{ 'is-hidden': !$store.ui.isShowingIcon }"
           alt=""
         />
         <span
           id="status-main-text"
+          class="status-text"
           x-text="$store.ui.statusText"
           aria-live="polite"
         >
