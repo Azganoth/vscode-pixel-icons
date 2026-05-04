@@ -1,20 +1,35 @@
 {
   "name": "pixel-icons",
   "displayName": "Pixel Icons",
-  "description": "Pixel art icons for vscode",
   "version": "1.0.1",
-  "type": "module",
-  "engines": {
-    "node": ">=24.0.0",
-    "vscode": "^1.105.0"
-  },
+  "description": "Pixel art icons for vscode",
   "categories": [
     "Other"
   ],
+  "repository": "https://github.com/Azganoth/vscode-pixel-icons",
   "publisher": "Azganoth",
-  "icon": "./icon.png",
-  "activationEvents": [],
+  "type": "module",
   "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "format": "oxfmt",
+    "test": "vscode-test",
+    "generate-samples": "node scripts/generate-samples.ts",
+    "dev:web": "pnpx live-server --open=docs/ --watch=docs/,assets/icons/"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24",
+    "@types/vscode": "^1.105.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "live-server": "^1.2.2",
+    "oxfmt": "^0.52.0",
+    "typescript": "^6.0.3"
+  },
   "contributes": {
     "iconThemes": [
       {
@@ -24,30 +39,11 @@
       }
     ]
   },
-  "repository": "https://github.com/Azganoth/vscode-pixel-icons",
-  "scripts": {
-    "vscode:prepublish": "pnpm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
-    "format": "prettier --write .",
-    "lint": "eslint src",
-    "test": "vscode-test",
-    "generate-samples": "node scripts/generate-samples.ts",
-    "dev:web": "pnpx live-server --open=docs/ --watch=docs/,assets/icons/"
-  },
-  "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "^24",
-    "@types/vscode": "^1.105.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.1",
-    "@typescript-eslint/parser": "^8.46.1",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2",
-    "eslint": "^9.37.0",
-    "live-server": "^1.2.2",
-    "prettier": "^3.6.2",
-    "typescript": "^6.0.3"
+  "activationEvents": [],
+  "icon": "./icon.png",
+  "engines": {
+    "node": ">=24.0.0",
+    "vscode": "^1.105.0"
   },
   "packageManager": "pnpm@11.3.0+sha512.2c403d6594527287672b1f7056343a1f7c3634036a67ffabfcc2b3d7595d843768f8787148d1b57cf7956c90606bbd192857c363af19e96d2d0ec9ec5741d215"
 }

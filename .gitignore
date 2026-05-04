@@ -11,10 +11,6 @@ samples/
 .env*.local
 
 # VS Code
-.vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 .vscode-test/
 
 # Logs
