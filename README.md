@@ -36,7 +36,7 @@ Inspired by the excellent work of [Platinumaniac](https://github.com/Platinumani
 
 ## Contributing
 
-Want to add a new icon or fix a bug? Please read [DEVELOPMENT.md](DEVELOPMENT.md) for setup and contribution guidelines.
+Want to add a new icon or fix a bug? Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup and contribution guidelines.
 
 ## License
 
