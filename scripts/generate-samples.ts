@@ -1,4 +1,3 @@
-// @ts-check
 import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
@@ -42,7 +41,7 @@ await Promise.all(
       await writeFile(filePath, "", { flag: "wx" });
       fileCount++;
     } catch (err) {
-      const e = /** @type {NodeJS.ErrnoException} */ (err);
+      const e = err as NodeJS.ErrnoException;
       if (e && (e.code === "EISDIR" || e.code === "EEXIST")) {
         await mkdir(collisionDir, { recursive: true });
         await writeFile(join(collisionDir, fileName), "");
