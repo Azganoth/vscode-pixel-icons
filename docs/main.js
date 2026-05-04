@@ -37,10 +37,7 @@ const fileIcon = (name, file, tooltip = null) => ({
  */
 const folderIcon = (name, file, tooltip = null) => ({
   name,
-  src: [
-    `${BASE_PATH}/folders/${file}.png`,
-    `${BASE_PATH}/folders/${file}_expanded.png`,
-  ],
+  src: [`${BASE_PATH}/folders/${file}.png`, `${BASE_PATH}/folders/${file}_expanded.png`],
   tooltip,
 });
 
@@ -91,11 +88,7 @@ const iconSections = [
   {
     title: "Runtimes & Managers",
     icons: [
-      fileIcon(
-        "Node.js",
-        "node",
-        ".node-version, .npmrc, .nvmrc, nodemon.json, package.json",
-      ),
+      fileIcon("Node.js", "node", ".node-version, .npmrc, .nvmrc, nodemon.json, package.json"),
       fileIcon("Bun", "bun", "bunfig.toml"),
       fileIcon("Deno", "deno", "deno.json, deno.jsonc"),
       fileIcon("PNPM", "pnpm", ".pnpmfile.cjs, pnpm-workspace.yaml"),
@@ -111,22 +104,10 @@ const iconSections = [
         "git",
         ".gitattributes, .gitconfig, .gitignore, .gitkeep, .gitmessage, .gitmodules, .gitreview",
       ),
-      fileIcon(
-        "Docker",
-        "docker",
-        "Dockerfile, docker-compose.yml (and variants)",
-      ),
+      fileIcon("Docker", "docker", "Dockerfile, docker-compose.yml (and variants)"),
       fileIcon("Docker Ign", "docker_ignore", ".dockerignore"),
-      fileIcon(
-        "ESLint",
-        "eslint",
-        ".eslintrc, eslint.config.js (and variants)",
-      ),
-      fileIcon(
-        "Prettier",
-        "prettier",
-        ".prettierrc, prettier.config.js (and variants)",
-      ),
+      fileIcon("ESLint", "eslint", ".eslintrc, eslint.config.js (and variants)"),
+      fileIcon("Prettier", "prettier", ".prettierrc, prettier.config.js (and variants)"),
       fileIcon("Prettier Ign", "prettier_ignore", ".prettierignore"),
       fileIcon("Vercel", "vercel", "vercel.json"),
       fileIcon("Vercel Ign", "vercel_ignore", ".vercelignore"),
@@ -143,11 +124,7 @@ const iconSections = [
       fileIcon("License", "license", "LICENSE, COPYING (and variants)"),
       fileIcon("Robots", "robots", "robots.txt"),
       fileIcon("Toc", "toc", ".toc"),
-      fileIcon(
-        "Settings",
-        "config",
-        ".cfg, .conf, .config, .ini, .properties; .editorconfig",
-      ),
+      fileIcon("Settings", "config", ".cfg, .conf, .config, .ini, .properties; .editorconfig"),
     ],
   },
   {
@@ -164,29 +141,13 @@ const iconSections = [
   {
     title: "Creative & Media",
     icons: [
-      fileIcon(
-        "Image",
-        "image",
-        ".bmp, .dds, .gif, .heic, .icns, .ico, .jpeg, .jpg, .png, ...",
-      ),
+      fileIcon("Image", "image", ".bmp, .dds, .gif, .heic, .icns, .ico, .jpeg, .jpg, .png, ..."),
       fileIcon("SVG", "svg", ".svg"),
       fileIcon("Font", "font", ".otf, .ttf, .woff, .woff2"),
-      fileIcon(
-        "Video",
-        "video",
-        ".avi, .flv, .m4v, .mkv, .mov, .mp4, .mts, .vob, ...",
-      ),
-      fileIcon(
-        "Audio",
-        "sound",
-        ".aac, .aif, .aiff, .au, .flac, .m4a, .mid, .mp3, ...",
-      ),
+      fileIcon("Video", "video", ".avi, .flv, .m4v, .mkv, .mov, .mp4, .mts, .vob, ..."),
+      fileIcon("Audio", "sound", ".aac, .aif, .aiff, .au, .flac, .m4a, .mid, .mp3, ..."),
       fileIcon("Blender", "blend", ".blend"),
-      fileIcon(
-        "3D Model",
-        "model",
-        ".dae, .fbx, .glb, .gltf, .obj, .ply, .stl",
-      ),
+      fileIcon("3D Model", "model", ".dae, .fbx, .glb, .gltf, .obj, .ply, .stl"),
       fileIcon("Aseprite", "ase", ".ase, .aseprite"),
       fileIcon("Godot Scene", "tscn", ".tscn"),
       fileIcon("Godot Res", "tres", ".tres"),
@@ -205,21 +166,13 @@ const iconSections = [
     title: "Folders",
     icons: [
       folderIcon("Generic", "folder"),
-      folderIcon(
-        "Assets",
-        "asset_folder",
-        "assets, icons, images, public, static",
-      ),
+      folderIcon("Assets", "asset_folder", "assets, icons, images, public, static"),
       folderIcon("Dist", "dist_folder", "bin, build, dist, out, target"),
       folderIcon("Node", "node_folder", "node_modules"),
       folderIcon("VS Code", "vscode_folder", ".vscode"),
       folderIcon("Vercel", "vercel_folder", ".vercel"),
       folderIcon("Data", "data_folder", "data, docs"),
-      folderIcon(
-        "Extension",
-        "extension_folder",
-        "addons, extensions, plugins, vendor",
-      ),
+      folderIcon("Extension", "extension_folder", "addons, extensions, plugins, vendor"),
       folderIcon("Models", "model_folder", "3D, models"),
       folderIcon("Sound", "sound_folder", "music, sound"),
       folderIcon("Python", "python_folder", "python"),
