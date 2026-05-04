@@ -1,0 +1,41 @@
+name: Icon Request
+description: Request a new pixel icon for a file extension, specific file, or folder.
+title: "[Icon Request]: <Icon Name>"
+labels: ["Feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new icon for the `vscode-pixel-icons` theme!
+  - type: input
+    id: icon_name
+    attributes:
+      label: Icon Name / Target
+      description: What is the technology, framework, or file type? (e.g., Tailwind CSS, Docker, Python)
+      placeholder: "e.g., Tailwind CSS"
+    validations:
+      required: true
+  - type: input
+    id: extensions_names
+    attributes:
+      label: File Extensions or Names
+      description: Which file extensions, specific file names, or folder names should use this icon?
+      placeholder: "e.g., tailwind.config.js, tailwind.config.ts, .css"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Brand Guidelines / References
+      description: Please provide a link to the official logo or brand guidelines to help me design an accurate pixel art version.
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Existing Icon Check
+      description: Please verify that this icon doesn't already exist in the theme.
+      options:
+        - label: I have checked the current icon list and confirmed this is a new request.
+          required: true
