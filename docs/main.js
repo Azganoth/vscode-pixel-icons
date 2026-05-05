@@ -102,8 +102,9 @@ const iconSections = [
       fileIcon(
         "Git",
         "git",
-        ".gitattributes, .gitconfig, .gitignore, .gitkeep, .gitmessage, .gitmodules, .gitreview",
+        ".gitattributes, .gitconfig, .gitkeep, .gitmessage, .gitmodules, .gitreview",
       ),
+      fileIcon("Git Ign", "git_ignore", ".gitignore"),
       fileIcon("Docker", "docker", "Dockerfile, docker-compose.yml (and variants)"),
       fileIcon("Docker Ign", "docker_ignore", ".dockerignore"),
       fileIcon("ESLint", "eslint", ".eslintrc, eslint.config.js (and variants)"),
@@ -124,7 +125,11 @@ const iconSections = [
       fileIcon("License", "license", "LICENSE, COPYING (and variants)"),
       fileIcon("Robots", "robots", "robots.txt"),
       fileIcon("Toc", "toc", ".toc"),
-      fileIcon("Settings", "config", ".cfg, .conf, .config, .ini, .properties; .editorconfig"),
+      fileIcon("Settings", "config", ".cfg, .conf, .config, .ini, .properties"),
+      fileIcon("EditorConfig", "editorconfig", ".editorconfig"),
+      fileIcon("Oxc", "oxc", ".oxlintrc.json, .oxfmtrc.json (and variants)"),
+      fileIcon("Tauri", "tauri", "tauri.conf.json, Tauri.toml (and variants)"),
+      fileIcon("Vitest", "vitest", "vitest.config.js, vitest.workspace.js (and variants)"),
     ],
   },
   {
@@ -160,6 +165,7 @@ const iconSections = [
       fileIcon("Text", "text", ".log, .txt"),
       fileIcon("Markdown", "markdown", ".markdown, .md"),
       fileIcon("Archive", "zip", ".7z, .7zip, .gz, .rar, .tar, .tgz, .zip"),
+      fileIcon("Patch", "patch", ".patch"),
     ],
   },
   {

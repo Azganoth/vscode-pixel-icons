@@ -299,6 +299,24 @@
     },
     "vercel_ignore_file": {
       "iconPath": "./icons/vercel_ignore.png"
+    },
+    "editorconfig_file": {
+      "iconPath": "./icons/editorconfig.png"
+    },
+    "git_ignore_file": {
+      "iconPath": "./icons/git_ignore.png"
+    },
+    "oxc_file": {
+      "iconPath": "./icons/oxc.png"
+    },
+    "patch_file": {
+      "iconPath": "./icons/patch.png"
+    },
+    "tauri_file": {
+      "iconPath": "./icons/tauri.png"
+    },
+    "vitest_file": {
+      "iconPath": "./icons/vitest.png"
     }
   },
   "folder": "base_folder",
@@ -495,7 +513,8 @@
     "sln": "vs_file",
     "csproj": "vs_file",
     "vsix": "vscode_ext_file",
-    "prisma": "prisma_file"
+    "prisma": "prisma_file",
+    "patch": "patch_file"
   },
   "fileNames": {
     "Dockerfile": "docker_file",
@@ -528,7 +547,7 @@
     "docker-compose.local.yaml": "docker_file",
     "docker-compose.local.override.yml": "docker_file",
     "docker-compose.local.override.yaml": "docker_file",
-    ".editorconfig": "config_file",
+    ".editorconfig": "editorconfig_file",
     "package.json": "node_file",
     "package-lock.json": "node_lock_file",
     "pnpm-lock.yaml": "pnpm_lock_file",
@@ -548,7 +567,7 @@
     "requirements.txt": "pip_file",
     "Pipfile": "pip_lock_file",
     "Pipfile.lock": "pip_lock_file",
-    ".gitignore": "git_file",
+    ".gitignore": "git_ignore_file",
     ".gitattributes": "git_file",
     ".gitkeep": "git_file",
     ".gitconfig": "git_file",
@@ -663,6 +682,37 @@
     "vercel.json": "vercel_file",
     ".vercelignore": "vercel_ignore_file",
     ".vscode": "vscode_file",
-    ".vscodeignore": "vscode_ignore_file"
+    ".vscodeignore": "vscode_ignore_file",
+    ".oxlintrc.json": "oxc_file",
+    ".oxlintrc.jsonc": "oxc_file",
+    "oxlint.config.ts": "oxc_file",
+    ".oxfmtrc.json": "oxc_file",
+    ".oxfmtrc.jsonc": "oxc_file",
+    "tauri.conf.json": "tauri_file",
+    "tauri.conf.json5": "tauri_file",
+    "Tauri.toml": "tauri_file",
+    "tauri.linux.conf.json": "tauri_file",
+    "tauri.windows.conf.json": "tauri_file",
+    "tauri.macos.conf.json": "tauri_file",
+    "tauri.android.conf.json": "tauri_file",
+    "tauri.ios.conf.json": "tauri_file",
+    "Tauri.linux.toml": "tauri_file",
+    "Tauri.windows.toml": "tauri_file",
+    "Tauri.macos.toml": "tauri_file",
+    "Tauri.android.toml": "tauri_file",
+    "Tauri.ios.toml": "tauri_file",
+    "vitest.config.js": "vitest_file",
+    "vitest.config.ts": "vitest_file",
+    "vitest.config.mjs": "vitest_file",
+    "vitest.config.cjs": "vitest_file",
+    "vitest.config.mts": "vitest_file",
+    "vitest.config.cts": "vitest_file",
+    "vitest.workspace.js": "vitest_file",
+    "vitest.workspace.ts": "vitest_file",
+    "vitest.workspace.mjs": "vitest_file",
+    "vitest.workspace.cjs": "vitest_file",
+    "vitest.workspace.mts": "vitest_file",
+    "vitest.workspace.cts": "vitest_file",
+    "vitest.workspace.json": "vitest_file"
   }
 }
