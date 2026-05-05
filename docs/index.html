@@ -30,6 +30,20 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
+    <div class="bg-decorations" aria-hidden="true" x-data="parallaxBackground" @scroll.window="onScroll">
+      <div class="parallax-layer" :style="{ height: docHeight + 'px', transform: 'translateY(' + (-scroll * 0.6) + 'px)' }">
+        <img src="/assets/icons/python.png" class="decor-icon" style="top: 5%; left: 5%; transform: rotate(-15deg);" />
+        <img src="/assets/icons/react.png" class="decor-icon" style="top: 15%; right: 8%; transform: rotate(10deg);" />
+        <img src="/assets/icons/sass.png" class="decor-icon" style="top: 25%; left: 10%; transform: rotate(20deg);" />
+        <img src="/assets/icons/bun.png" class="decor-icon" style="top: 35%; right: 15%; transform: rotate(-5deg);" />
+        <img src="/assets/icons/git.png" class="decor-icon" style="top: 45%; left: 5%; transform: rotate(-10deg);" />
+        <img src="/assets/icons/vscode.png" class="decor-icon" style="top: 55%; right: 10%; transform: rotate(15deg);" />
+        <img src="/assets/icons/json.png" class="decor-icon" style="top: 65%; left: 50%; transform: rotate(-20deg);" />
+        <img src="/assets/icons/font.png" class="decor-icon" style="top: 75%; left: 40%; transform: rotate(5deg);" />
+        <img src="/assets/icons/ase.png" class="decor-icon" style="top: 85%; right: 10%; transform: rotate(-10deg);" />
+        <img src="/assets/icons/html.png" class="decor-icon" style="top: 95%; left: 20%; transform: rotate(15deg);" />
+      </div>
+    </div>
     <header>
       <h1>Pixel Icons</h1>
       <p class="subtitle">

@@ -191,6 +191,21 @@ document.addEventListener("alpine:init", () => {
   }));
 
   // @ts-ignore
+  Alpine.data("parallaxBackground", () => ({
+    scroll: 0,
+    docHeight: 1000,
+    init() {
+      this.docHeight = document.documentElement.scrollHeight;
+      new ResizeObserver(() => {
+        this.docHeight = document.documentElement.scrollHeight;
+      }).observe(document.body);
+    },
+    onScroll() {
+      this.scroll = window.scrollY;
+    },
+  }));
+
+  // @ts-ignore
   Alpine.store("ui", {
     defaultText: DEFAULT_STATUS_TEXT,
     statusText: DEFAULT_STATUS_TEXT,
