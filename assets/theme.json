@@ -688,6 +688,7 @@
     "oxlint.config.ts": "oxc_file",
     ".oxfmtrc.json": "oxc_file",
     ".oxfmtrc.jsonc": "oxc_file",
+    "oxfmt.config.ts": "oxc_file",
     "tauri.conf.json": "tauri_file",
     "tauri.conf.json5": "tauri_file",
     "Tauri.toml": "tauri_file",
